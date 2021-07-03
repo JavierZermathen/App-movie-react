@@ -1,5 +1,5 @@
 const API = "https://api.themoviedb.org/3";
-const lenguaje =  "&language=ES";
+const lenguaje =  "language=ES";
 
 export function get(path) {
   return fetch(API + path  , {

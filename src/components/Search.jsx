@@ -17,7 +17,7 @@ export function Search() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    history.push("/?search=" + searchText);
+    history.push("/?search=" + searchText );
   };
   return (
     <form className={styles.searchContainer} onSubmit={handleSubmit}>

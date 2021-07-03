@@ -11,9 +11,9 @@ export function MovieDetails() {
 
   useEffect(() => {
     setIsLoading(true);
-
-    get("/movie/" + movieId ).then((data) => {
-      setMovie(data);
+    get("/movie/" + movieId + "?language=ES").then((data ) => {
+    // get("/movie/508943?language=ES").then((data ) => {
+      setMovie(data );
       setIsLoading(false);
     });
   }, [movieId]);
@@ -46,6 +46,11 @@ export function MovieDetails() {
           <strong>Descripcion:</strong> {movie.overview}
         </p>
 
+        <p>
+          <strong>Puntuacion:</strong> {movie.vote_average}
+        </p>
+
+        
       </div>
     </div>
   );

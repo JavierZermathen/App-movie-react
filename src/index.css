@@ -7,18 +7,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  
-
-
   background-image: url('https://i.imgur.com/K6aW1Hr.jpg'); 
-  
-  
+   
   background-size: cover;
-  
 
   background-attachment: fixed;
 
- 
 
   color: rgb(0, 0, 0);
   font-family: "Roboto";
